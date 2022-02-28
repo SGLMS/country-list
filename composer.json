@@ -1,0 +1,20 @@
+{
+    "name": "sglms/country-list",
+    "description": "Simple Country List",
+    "type": "library",
+    "require": {
+        "umpirsky/country-list": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sglms\\CountryList\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "James",
+            "email": "james@sglms.com"
+        }
+    ]
+}
