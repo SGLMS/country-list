@@ -4,35 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f925368e9b52b8fba4cc3938e1269f28",
+    "content-hash": "6343082968387879d3c17b7f96d33878",
     "packages": [
         {
-            "name": "umpirsky/country-list",
-            "version": "2.0.6",
+            "name": "rinvex/countries",
+            "version": "v8.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/umpirsky/country-list.git",
-                "reference": "6dddae6983c1bc4d314b513c5decb7c8c6c879dc"
+                "url": "https://github.com/rinvex/countries.git",
+                "reference": "947031400fecc1c9f2f639d86e2113ee6cb09c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umpirsky/country-list/zipball/6dddae6983c1bc4d314b513c5decb7c8c6c879dc",
-                "reference": "6dddae6983c1bc4d314b513c5decb7c8c6c879dc",
+                "url": "https://api.github.com/repos/rinvex/countries/zipball/947031400fecc1c9f2f639d86e2113ee6cb09c37",
+                "reference": "947031400fecc1c9f2f639d86e2113ee6cb09c37",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0 || ^8.0"
+                "php": "^8.0.0"
             },
             "require-dev": {
-                "slowprog/composer-copy-file": "^0.2",
-                "symfony/intl": "^4.3",
-                "umpirsky/list-generator": "^1.2"
+                "codedungeon/phpunit-result-printer": "^0.31.0",
+                "phpunit/phpunit": "^9.5.0"
             },
             "type": "library",
             "extra": {
-                "copy-file": {
-                    "vendor/umpirsky/list-generator/Dockerfile": "./",
-                    "vendor/umpirsky/list-generator/docker-compose.yml": "./"
+                "laravel": {
+                    "providers": [
+                        "Rinvex\\Country\\Providers\\CountryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Rinvex\\Country\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -41,16 +49,45 @@
             ],
             "authors": [
                 {
-                    "name": "Saša Stamenković",
-                    "email": "umpirsky@gmail.com"
+                    "name": "Rinvex LLC",
+                    "email": "help@rinvex.com",
+                    "homepage": "https://rinvex.com"
+                },
+                {
+                    "name": "Abdelrahman Omran",
+                    "email": "me@omranic.com",
+                    "homepage": "https://omranic.com",
+                    "role": "Project Lead"
+                },
+                {
+                    "name": "The Generous PHP Community",
+                    "homepage": "https://github.com/rinvex/countries/contributors"
                 }
             ],
-            "description": "List of all countries with names and ISO 3166-1 codes in all languages and data formats.",
+            "description": "Rinvex Countries is a simple and lightweight package for retrieving country details with flexibility. A whole bunch of data including name, demonym, capital, iso codes, dialling codes, geo data, currencies, flags, emoji, and other attributes for all 250 countries worldwide at your fingertips.",
+            "homepage": "https://rinvex.com",
+            "keywords": [
+                "Flexible",
+                "Simple",
+                "countries",
+                "country",
+                "currencies",
+                "demonym",
+                "dialling",
+                "emoji",
+                "flags",
+                "geographic",
+                "languages",
+                "rinvex",
+                "svg"
+            ],
             "support": {
-                "issues": "https://github.com/umpirsky/country-list/issues",
-                "source": "https://github.com/umpirsky/country-list/tree/2.0.6"
+                "docs": "https://github.com/rinvex/countries/blob/master/README.md",
+                "email": "help@rinvex.com",
+                "issues": "https://github.com/rinvex/countries/issues",
+                "source": "https://github.com/rinvex/countries"
             },
-            "time": "2020-12-03T10:09:09+00:00"
+            "time": "2021-10-05T08:02:55+00:00"
         }
     ],
     "packages-dev": [],

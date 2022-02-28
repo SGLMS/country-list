@@ -3,12 +3,12 @@
     "description": "Simple Country List",
     "type": "library",
     "require": {
-        "umpirsky/country-list": "^2.0"
+        "rinvex/countries": "^8.1"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sglms\\CountryList\\": "src/"
+            "SGLMS\\CountryList\\": "src/"
         }
     },
     "authors": [
