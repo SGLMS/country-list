@@ -12,3 +12,7 @@ echo "<hr/>";
 echo $country   = Country::find('US', 'de');
 echo "<hr/>";
 
+$countries = Country::selectOptions('pt');
+
+asort($countries);
+var_dump($countries);
