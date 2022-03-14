@@ -32,11 +32,15 @@ class Country extends \Rinvex\Country\CountryLoader
         $country = self::country($code, true);
         switch ($locale) {
             default:
-                $countryName = $country->getOfficialName(); break;
+                $countryName = $country->getName(); break;
             case 'en':
-                $countryName = $country->getOfficialName(); break;
+                $countryName = $country->getName(); break;
                 break;
             case 'es':
+            case 'cl':
+            case 'co':
+            case 'pe':
+            case 'mx':
                 $countryName = $country->getTranslations()['spa']['common'] ?? $country->getName();
                 break;
             case 'de':
