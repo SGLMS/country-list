@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "rinvex/countries",
-            "version": "v8.1.0",
+            "version": "v8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rinvex/countries.git",
-                "reference": "947031400fecc1c9f2f639d86e2113ee6cb09c37"
+                "reference": "b012697307453e7d9d2df25bd385904b3e2e9baf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rinvex/countries/zipball/947031400fecc1c9f2f639d86e2113ee6cb09c37",
-                "reference": "947031400fecc1c9f2f639d86e2113ee6cb09c37",
+                "url": "https://api.github.com/repos/rinvex/countries/zipball/b012697307453e7d9d2df25bd385904b3e2e9baf",
+                "reference": "b012697307453e7d9d2df25bd385904b3e2e9baf",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "issues": "https://github.com/rinvex/countries/issues",
                 "source": "https://github.com/rinvex/countries"
             },
-            "time": "2021-10-05T08:02:55+00:00"
+            "time": "2022-12-29T20:30:43+00:00"
         }
     ],
     "packages-dev": [],
@@ -98,5 +98,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
